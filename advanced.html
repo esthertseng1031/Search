@@ -2,70 +2,116 @@
 <html lang="en">
     <head>
         <title>Google Advanced Search</title>
-        <!--Bootstrap CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Specify the character encoding for the HTML document. -->
+        <meta charset="UTF-8">
+        <!-- Set the viewport to make website look good on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
             div.relative{
                 position: relative;
-                top: 24px;
+                top: 0px;
                 left: 0px;
                 width: 1060px;
                 height: 400px;
             }
+            div.link{
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                width: 100px;
+                height: 40px;
+            }
+            div.banner1{
+                position: absolute;
+                top: 80px;
+                left: 40px;
+                width: 220px;
+                height: 65px;
+                font-size: 24px;
+                color: #cc2900;
+            }
+            div.banner2{
+                position: absolute;
+                top: 170px;
+                left: 40px;
+                width: 200px;
+                height: 40px;
+                font-size: 20px;
+                color: black;
+            }
             div.advanced_options{
                 position: absolute;
-                top: 4px;
-                left: 10px;
-                width: 240px;
-                height: 280px;
+                top: 240px;
+                left: 14px;
+                width: 250px;
+                height: 250px;
             }
             div.advanced_options > p{
-                font-family: Arial, Helvetica, sans-serif;
                 font-size: 16px;
-                margin: 28px;
+                margin: 32px;
             }
             div.advanced_inputs{
                 position: absolute;
-                top: 16px;
-                left: 240px;
-                width: 480px;
-                height: 280px;
+                top: 250px;
+                left: 260px;
+                width: 580px;
+                height: 240px;
             }
             div.advanced_inputs > .input_form{
                 background-color:white;
-                width: 480px;
-                height: 36px;
-                margin: 8px;
+                width: 520px;
+                height: 30px;
+                margin: 9px;
+                border: 1.2px solid #b3b3b3;
             }
             div.advanced_submit{
                 position: absolute;
-                top: 240px;
-                left: 540px;
-                width: 160px;
-                height: 28px;
+                top: 490px;
+                left: 620px;
+                width: 200px;
+                height: 40px;
             }
-            a[href="index.html"]{
-                position: fixed;
-                top: 0px;
-                right: 0px;
-                margin: 8px;
+            .button_submit{
+                background-color: #4d94ff; /* Green */
+                border-radius: 4px;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 4px;
+            } 
+            img{
+                width: 90px;
+                height: 30px;
+                margin: 4px;
             }
         </style>
     </head>
     <body>
-        <a href="index.html">Google Search</a>
-        <br>
-        <form action="https://www.google.com/search">
-            <div class="relative">
-                <div class="advanced_options">
-                    <p>all these words:</p>
-                    
-                    <p>this exact word or phrase:</p>
-                    
-                    <p>any of these words:</p>
-                    
-                    <p>none of these words:</p>
-                </div>
+        <div class="relative">
+            <div class="link">
+                <a href="index.html"><img src="google.png" alt="index"></a>
+            </div>
+            <div class="banner1">
+                <p>Advanced Search</p>
+            </div>
+            <div class="banner2">
+                <p>Find pages with...</p>
+            </div>
+            <div class="advanced_options">
+                <p>all these words:</p>    
+                <p>this exact word or phrase:</p>   
+                <p>any of these words:</p>   
+                <p>none of these words:</p>
+            </div>
+            <form action="https://www.google.com/search">
                 <div class="advanced_inputs">
                     <!--Search with all these words-->
                     <input class="input_form" type="text" name="as_q">
@@ -83,9 +129,9 @@
                     <input type="hidden" name="as_qdr" value="all">
                     <input type="hidden" name="as_occt" value="any">
                     <input type="hidden" name="safe" value="images">
-                    <input class="btn btn-primary" type="submit" value="Advanced Search">
+                    <input class="button_submit" type="submit" value="Advanced Search">
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </body>
 </html>
