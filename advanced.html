@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <style>
+            div.relative{
+                position: relative;
+                top: 24px;
+                left: 0px;
+                width: 1060px;
+                height: 400px;
+            }
+            div.advanced_options{
+                position: absolute;
+                top: 4px;
+                left: 10px;
+                width: 240px;
+                height: 280px;
+            }
+            div.advanced_options > p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                margin: 28px;
+            }
+            div.advanced_inputs{
+                position: absolute;
+                top: 16px;
+                left: 240px;
+                width: 480px;
+                height: 280px;
+            }
+            div.advanced_inputs > .input_form{
+                background-color:white;
+                width: 480px;
+                height: 36px;
+                margin: 8px;
+            }
+            div.advanced_submit{
+                position: absolute;
+                top: 240px;
+                left: 540px;
+                width: 160px;
+                height: 28px;
+            }
+            a[href="index.html"]{
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                margin: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Google Search</a>
+        <br>
+        <form action="https://www.google.com/search">
+            <div class="relative">
+                <div class="advanced_options">
+                    <p>all these words:</p>
+                    
+                    <p>this exact word or phrase:</p>
+                    
+                    <p>any of these words:</p>
+                    
+                    <p>none of these words:</p>
+                </div>
+                <div class="advanced_inputs">
+                    <!--Search with all these words-->
+                    <input class="input_form" type="text" name="as_q">
+                    <br>
+                    <!--Search with this exact word or phrase-->
+                    <input class="input_form" type="text" name="as_epq">
+                    <br>
+                    <!--Search with any of these words-->
+                    <input class="input_form" type="text" name="as_oq">
+                    <br>
+                    <!--Search with none of these words-->
+                    <input class="input_form" type="text" name="as_eq">
+                </div>
+                <div class="advanced_submit">
+                    <input type="hidden" name="as_qdr" value="all">
+                    <input type="hidden" name="as_occt" value="any">
+                    <input type="hidden" name="safe" value="images">
+                    <input class="btn btn-primary" type="submit" value="Advanced Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

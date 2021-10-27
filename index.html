@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            a[href="image_search.html"]{
+                position: fixed;
+                top: 0px;
+                right: 208px;
+                margin: 8px;
+            }
+            a[href="advanced_search.html"]{
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                margin: 8px;
+            }
+            .input_form{
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="image_search.html">Google Image Search</a>
+        <a href="advanced_search.html">Google Advanced Search</a>
+        <br>
+        <br>
+        <form action="https://www.google.com/search">
+            <input class="input_form" type="text" name="q">
+            <br>
+            <br>
+            <input type="submit" value="Google Search">
+        </form>
+    </body>
+</html>
