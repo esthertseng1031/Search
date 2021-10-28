@@ -1,0 +1,145 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.relative{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1060px;
+    height: 400px;
+}
+div.index_link{
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 180px;
+    height: 80px;
+}
+div.image_link{
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 140px;
+    height: 40px;
+}
+div.advanced_link{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 100px;
+    height: 40px;
+}
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    margin: 8px;
+    font-size: 16px;
+}
+div.banner1{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 220px;
+    height: 65px;
+    font-size: 24px;
+    color: #cc2900;
+}
+div.banner2{
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+}
+div.google_logo{
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    width: 350px;
+    height: 120px;
+}
+div.search{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    width: 900px;
+    height: 150px;
+    text-align: center;
+}
+.input_form{
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 100px;
+    width: 700px;
+    height: 50px;
+    background-color: white;
+    border: 1.5px solid #e6e6e6;
+    margin: 8px;
+}
+.button_search{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    color: #333333;
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin: 24px;
+}
+div.advanced_options{
+    position: absolute;
+    top: 240px;
+    left: 14px;
+    width: 250px;
+    height: 250px;
+}
+div.advanced_options > p{
+    font-size: 16px;
+    margin: 32px;
+}
+div.advanced_inputs{
+    position: absolute;
+    top: 250px;
+    left: 260px;
+    width: 580px;
+    height: 240px;
+}
+div.advanced_inputs > .advanced_input_form{
+    background-color:white;
+    width: 520px;
+    height: 30px;
+    margin: 9px;
+    border: 1.2px solid #b3b3b3;
+}
+div.advanced_submit{
+    position: absolute;
+    top: 490px;
+    left: 620px;
+    width: 200px;
+    height: 40px;
+}
+.button_submit{
+    background-color: #4d94ff; /* Green */
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px;
+} 
+img.advanced_logo{
+    width: 90px;
+    height: 30px;
+    margin: 4px;
+}

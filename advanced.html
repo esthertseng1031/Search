@@ -6,98 +6,14 @@
         <meta charset="UTF-8">
         <!-- Set the viewport to make website look good on all devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            div.relative{
-                position: relative;
-                top: 0px;
-                left: 0px;
-                width: 1060px;
-                height: 400px;
-            }
-            div.link{
-                position: absolute;
-                top: 16px;
-                left: 16px;
-                width: 100px;
-                height: 40px;
-            }
-            div.banner1{
-                position: absolute;
-                top: 80px;
-                left: 40px;
-                width: 220px;
-                height: 65px;
-                font-size: 24px;
-                color: #cc2900;
-            }
-            div.banner2{
-                position: absolute;
-                top: 170px;
-                left: 40px;
-                width: 200px;
-                height: 40px;
-                font-size: 20px;
-                color: black;
-            }
-            div.advanced_options{
-                position: absolute;
-                top: 240px;
-                left: 14px;
-                width: 250px;
-                height: 250px;
-            }
-            div.advanced_options > p{
-                font-size: 16px;
-                margin: 32px;
-            }
-            div.advanced_inputs{
-                position: absolute;
-                top: 250px;
-                left: 260px;
-                width: 580px;
-                height: 240px;
-            }
-            div.advanced_inputs > .input_form{
-                background-color:white;
-                width: 520px;
-                height: 30px;
-                margin: 9px;
-                border: 1.2px solid #b3b3b3;
-            }
-            div.advanced_submit{
-                position: absolute;
-                top: 490px;
-                left: 620px;
-                width: 200px;
-                height: 40px;
-            }
-            .button_submit{
-                background-color: #4d94ff; /* Green */
-                border-radius: 4px;
-                border: none;
-                color: white;
-                padding: 8px 16px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                font-weight: bold;
-                margin: 4px;
-            } 
-            img{
-                width: 90px;
-                height: 30px;
-                margin: 4px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="relative">
-            <div class="link">
-                <a href="index.html"><img src="google.png" alt="index"></a>
+            <div class="advanced_link">
+                <a href="index.html">
+                <img class="advanced_logo" src="google.png" alt="index">
+                </a>
             </div>
             <div class="banner1">
                 <p>Advanced Search</p>
@@ -114,16 +30,16 @@
             <form action="https://www.google.com/search">
                 <div class="advanced_inputs">
                     <!--Search with all these words-->
-                    <input class="input_form" type="text" name="as_q">
+                    <input class="advanced_input_form" type="text" name="as_q">
                     <br>
                     <!--Search with this exact word or phrase-->
-                    <input class="input_form" type="text" name="as_epq">
+                    <input class="advanced_input_form" type="text" name="as_epq">
                     <br>
                     <!--Search with any of these words-->
-                    <input class="input_form" type="text" name="as_oq">
+                    <input class="advanced_input_form" type="text" name="as_oq">
                     <br>
                     <!--Search with none of these words-->
-                    <input class="input_form" type="text" name="as_eq">
+                    <input class="advanced_input_form" type="text" name="as_eq">
                 </div>
                 <div class="advanced_submit">
                     <input type="hidden" name="as_qdr" value="all">
